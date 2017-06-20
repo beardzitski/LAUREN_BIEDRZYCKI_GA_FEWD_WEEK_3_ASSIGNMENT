@@ -41,82 +41,182 @@ Developer @GA in NYC
   padding: 0 10px 10px 0; /* note the padding around a left floated image */
 }
 
+
 /******************************************
 /* BASE STYLES
 /*******************************************/
-
 body {
-     color: #000;
-     font-size: 12px;
-     line-height: 1.4;
-     font-family: Helvetica, Arial, sans-serif;
+  background-color: #f0efef;
+  color: #000;
+  font-size: 12px;
+  line-height: 1.4;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  margin: 0;
 }
 
+header {
+  background-color: #033048;
+  padding: 0 20px 20px 20px;
+
+}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 
-/* Center the container */
-body {
-  background-color: #f0efef;
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 1.25em;
+}
+.main {
+  max-width: 980px;
+  margin: 0 auto;
 }
 
-header {
-  background-color: #033048;
-}
-
-nav {
-  display: block;
-  float: right;
-}
-
-.nav-logo {
-  display: inline-block;
+header, footer, .left-column, .right-column {
   float: left;
 }
 
-nav li {
-  display: inline-block;
-  color: white;
-
-}
-
-section.main>section {
-  padding: 0 1em;
-}
-
-
-img {
-  width: 100%;
-}
-
-.main {
-  display: block;
+header, footer {
   width: 100%;
 }
 
 .left-column {
-  display: inline-block;
-  float:left;
   width: 70%;
+  max-width: 700px;
 }
 
 .right-column {
-  display: inline-block;
-  float: right;
   width: 30%;
+  max-width: 240px;
 }
 
-header {
+.left-column, .right-column {
+  margin: 10px;
+}
 
+nav ul {
+  float: right;
+  margin-top: 60px;
+}
+
+.read-more {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  float: right;
+}
+hr {
+  clear: both;
+}
+
+.nav-logo {
+  float: left;
+  vertical-align: middle;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 45px;
+  font-weight: 800;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f9e42e;
+  margin: 0 1em;
+  font-size: 1.5em; /*24px*/
+}
+
+
+
+nav a:hover {
+  color: #606161;
+}
+
+img {
+  max-width: 100%;
 }
 
 footer {
-
+  background-color: #121212;
+  margin-top: 50px;
 }
 
+aside {
+  background-color: #f9e42e;
+  padding: 1em;
+}
 
+.sign-up-now {
+  background-color: #033048;
+  text-decoration: none;
+  color: #f0efef;
+  display: block;
+  margin: 0 auto;
+  max-width: 17em;
+  padding: 1em;
+  font-size: 12px;
+  font-weight: 800;
+  text-align: center;
+  border-radius: 5px;
+}
+
+h6.footer-copyright {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+  color: #606161;
+  text-align: center;
+}
+
+.learn-more  {
+  text-decoration: none;
+  font-weight: 800;
+  Font-size: 22px;
+}
+
+.categories a:hover, .about-relaxr a:hover, .left-column a:hover {
+  font-weight: bolder;
+}
+
+.categories a, .about-relaxr a, .left-column a {
+  color: #033048;
+}
+.categories a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+ul {
+  padding-left: 0;
+}
+
+#ad-unit {
+  margin-top: 20px;
+}
+
+footer li {
+  display: inline;
+  padding: 20px;
+}
+
+footer ul {
+  text-align: center;
+}
+
+.about-text {
+  font-size: 22px;
+}
+
+.left-column p::first-letter {
+  font-size: 60px;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
@@ -124,12 +224,26 @@ footer {
 /******************************************
 /*FONTS
 /*******************************************/
-h1 {
-  font-weight: 800;
-  color: white;
-  font-size: 1.5em; /*24px*/
+h1.center-footer-logo {
+  color: #f9e42e;
+  text-align: center;
+  padding: 20px;
 }
 
-h1.nav-logo {
-  color: white;
+h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #033048;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #033048;
+}
+
+p {
+  font-size: 24px;
+  font-weight: 300;
+  color: #606161;
 }
